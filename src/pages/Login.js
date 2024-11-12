@@ -38,12 +38,6 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    // Verificar se email e senha foram preenchidos
-    if (!email || !password) {
-      setError('Preencha todos os campos.');
-      return;
-    }
-
     // Resetar mensagem de erro e iniciar o estado de carregamento
     setError(null);
     setLoading(true);
